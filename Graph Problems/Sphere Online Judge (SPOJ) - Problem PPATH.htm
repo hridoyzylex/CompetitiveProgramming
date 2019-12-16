@@ -1,0 +1,560 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<title>Sphere Online Judge (SPOJ)  - Problem PPATH</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" id="metatag">
+<META NAME="Keywords" CONTENT="programming, language, algorithm, spoj, contest, contester, Java, C#, Pascal, C, C++, python, ruby, caml, ocaml, perl, haskell, lisp, prolog, fortran, assembler, asembler, functional, online, judge, problem, problemset, ACM">
+
+<link href="/gfx/favicon.png" rel="shortcut icon" type="image/x-icon">
+<link href="/rss/" rel="alternate" type="application/rss+xml" title="RSS Feed">
+<link href="/themes/common.css" rel="stylesheet" type="text/css" id="theme">
+<link href="/style.css" rel="stylesheet" type="text/css" id="theme">
+<link href="/themes/tooltips.css" rel="stylesheet" type="text/css" id="theme">
+<script type='text/javascript' src='/gfx/jquery.js'></script>
+<script type="text/javascript" src="/gfx/jquery.timers.js"></script>
+<style type="text/css">
+<!--
+.maintable {width: 755px;} 
+-->
+</style>
+<script type="text/javascript" language="javascript">
+<!--
+function UnCryptMailto(s) {
+	var n=0;
+	var r="";
+	for(var i=0;i<s.length;i++) {		
+		n=s.charCodeAt(i); 
+		if (n>=8364) {n = 128;}
+		r += String.fromCharCode(n+(2));	
+	}
+	return r;
+}
+function linkTo_UnCryptMailto(s)	{
+	location.href=UnCryptMailto(s);
+}
+// -->
+</script>
+
+<script type="text/javascript">
+function recordOutboundLink(link, category, action) {
+  try {
+    var pageTracker=_gat._getTracker("UA-XXXXX-X");
+    pageTracker._trackEvent(category, action);
+    setTimeout('document.location = "' + link.href + '"', 100)
+  }catch(err){}
+}
+</script>
+
+    <script type="text/javascript" src="/gfx/SyntaxHighlighter/scripts/shCore.js"></script>
+	<script type="text/javascript" src="/gfx/SyntaxHighlighter/scripts/shBrushCpp.js"></script>
+	<script type="text/javascript" src="/gfx/SyntaxHighlighter/scripts/shBrushCSharp.js"></script>
+    <script type="text/javascript" src="/gfx/SyntaxHighlighter/scripts/shBrushJava.js"></script>
+    <script type="text/javascript" src="/gfx/SyntaxHighlighter/scripts/shBrushPhp.js"></script>
+    <script type="text/javascript" src="/gfx/SyntaxHighlighter/scripts/shBrushPython.js"></script>
+	<link type="text/css" rel="stylesheet" href="/gfx/SyntaxHighlighter/styles/shCore.css"/>
+	<link type="text/css" rel="stylesheet" href="/gfx/SyntaxHighlighter/styles/shThemeDefault.css"/>
+	
+	<script type="text/javascript">
+		SyntaxHighlighter.all();
+	</script>
+	
+
+		<meta property="og:site_name" content="Spoj.pl"/>
+    <meta property="og:image" content="http://www.spoj.pl/gfx/spoj-fb.jpg"/>
+
+</head>
+<body>
+<center>
+<table cellpadding="10" cellspacing="0" class="maintable" id="maintable">
+<tr>
+    <td colspan="2" class="header">
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+		<td class="headerleft"/>
+		<td class="headercenter">
+<h1><IMG alt="Sphere Online Judge" title="Sphere Online Judge" src="/gfx/sphere-spoj-small.png" border=0 style="margin-top:-4px;margin-bottom:-4px"></h1>
+
+		<div style="position: relative; width: 807px;">
+		<div style="position: absolute; left: -192px; top: 8px;"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-4453360425583535";
+/* Spoj - wiezowiec */
+google_ad_slot = "2703472077";
+google_ad_width = 160;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+		</div>
+		</td>
+		<td class="headerright"/>
+	</tr>
+	</table>
+    </td>
+</tr>
+<tr><td class="menu" width="92" valign="top">
+
+
+<div class="menucmd"><a href="/logout"><b style="font-weight:normal">Log Out</b></a><br><b style="font-weight:normal; margin-right:-100px">muntasir</b><br><hr><a href="/uploads">upload&nbsp;files</a><br><a href="/contests/add">add&nbsp;contest</a><br><a href="/groups/add">add&nbsp;group</a><br><a href="/groups">group list</a><br><a href="/problems/my">problem&nbsp;list</a><br><hr><a href="/myaccount">my account</a><br><a href="/tutorials">tutorials</a><br><br><a href="/status">status</a><br><a href="/submit">submit</a><br><a href="/problems/classical/">problems</a><br><a href="/search">search</a><br><br><a href="/">news</a><br><a href="/contests">contests</a><br><a href="/ranks/">ranks</a><br><br><a href="/forum">forum</a><br><a href="/comments">comments</a><br><a href="/tools">tools</a><br><a href="/credits">credits</a><br><hr></div><a href="/problems/classical/"></a><br>
+
+	<div class="time">
+Server time:</div>
+<div class="time">
+2011-10-19
+<br>
+<b>22 : 47 : 42</b>
+</div>
+
+</td><td style="width: 748px; padding:0px;" valign="top" class="content0">
+        <table width="100%" cellpadding="0" cellspacing="0">
+        <tr>
+                <td style="padding:0px;" colspan="2"><center>
+                                
+                </center></td>
+        </tr>
+        <tr>
+                <td class="content" width="99%" style="padding: 10px"><script type='text/javascript' src='/gfx/jquery.bgiframe.js'></script>
+<script type='text/javascript' src='/gfx/jquery.tooltip.js'></script>
+<script type='text/javascript' src='/gfx/jquery.cxhelp.js'></script>
+
+
+
+ <!-- wykorzystywane w pcontent.html (by wiele) -->
+
+<table class="problems" width="100%">
+<tr class="navigation">
+<td><a href="/submit/PPATH/">Submit</a></td>
+<td><a href="/status/PPATH,muntasir/">My submissions</a></td>
+<td><a href="/status/PPATH/">All submissions</a></td>
+<td><a href="/ranks/PPATH/">Best solutions</a></td>
+<td><a href="/problems/PPATH.ps">PS</a></td>
+<td><a href="/problems/PPATH.pdf">PDF</a></td>
+<td><a href="/problems/classical/">Back to list</a></td>
+</tr>
+</table>
+
+<div class="prob">
+
+<!-- google_ad_section_start -->
+<!-- plik z pomoca kontekstowa (cxhelp_*) dziedziczony po pindex.html -->
+
+<div style="position: absolute;">
+<div class="fb-like" data-href="http://www.spoj.pl/problems/PPATH/" data-send="true" data-layout="box_count" data-width="70" data-show-faces="false"></div>
+</div>
+
+<script type="text/javascript" src="/gfx/jscripts/tiny_mce/plugins/asciimath/js/ASCIIMathMLwFallback.js"></script>
+<!--script type="text/javascript" src="/gfx/jscripts/tiny_mce/plugins/asciisvg/js/ASCIIsvgPI.js"></script-->
+<script type="text/javascript">
+<!--
+var AScgiloc = 'http://www.imathas.com/imathas/filter/graph/svgimg.php';
+var AMTcgiloc = "/files/gif/";
+-->
+</script>
+
+<table width="100%" style="margin-top:10px">
+<tr>
+	<td>
+		<h2>SPOJ Problem Set (classical)</h2>
+				<h1>1841. Prime Path</h1>
+		<h2>Problem code: PPATH</h2>
+	</td>
+	</tr>
+</table>
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-4453360425583535";
+/* Spoj - baner gĂłrny */
+google_ad_slot = "5796055248";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+<p align="justify">
+<p>
+<img src="https://www.spoj.pl/content/overwise:ppath1.jpg">
+</p>
+<p>
+The ministers of the cabinet were quite upset by the 
+message from the Chief of Security stating that they
+would all have to change the four-digit room numbers 
+on their offices. <br>
+&#8212; It is a matter of security to change such things
+    every now and then, to keep the enemy in the dark.<br>
+&#8212; But look, I have chosen my number 1033 for good
+    reasons. I am the Prime minister, you know!<br>
+&#8212; I know, so therefore your new number 8179 is also
+    a prime. You will just have to paste four new
+    digits over the four old ones on your office door.<br>
+&#8212; No, it's not that simple. Suppose that I change the
+    first digit to an 8, then the number will read 8033
+    which is not a prime!<br>
+
+&#8212; I see, being the prime minister you cannot stand
+    having a non-prime number on your door even for a
+    few seconds.<br>
+&#8212; Correct! So I must invent a scheme for going from
+    1033 to 8179 by a path of prime numbers where
+    only one digit is changed from one prime to the
+    next prime.
+
+<p>
+Now, the minister of finance, who had been eavesdropping,
+intervened.<br>
+&#8212; No unnecessary expenditure, please! I happen to
+    know that the price of a digit is one pound.<br>
+&#8212; Hmm, in that case I need a computer program to 
+    minimize the cost. You don't know some very cheap
+    software gurus, do you?<br>
+&#8212; In fact, I do. You see, there is this programming
+    contest going on...
+</p>
+<p>
+
+Help the prime minister to find the cheapest prime path
+between any two given four-digit primes! The first digit
+must be nonzero, of course. Here is a solution in the 
+case above.
+<pre>
+    1033
+    1733     
+    3733     
+    3739     
+    3779
+    8779
+    8179     
+</pre>
+The cost of this solution is 6 pounds.  Note that the digit 1
+which got pasted over in step 2 can not be reused in the last step
+&#8211; a new 1 must be purchased.
+</P>
+<h3>Input</h3>
+<p>
+One line with a positive number: the number of test cases (at most
+100). Then for each test case, one line with two numbers separated by
+a blank.  Both numbers are four-digit primes (without leading zeros).
+</p>
+<h3>Output</h3>
+<p>One line for each case, either with a number stating the minimal cost
+or containing the word <tt>Impossible</tt>. 
+</p>
+<h3>Example</h3>
+
+<pre>
+<b>Input:</b>
+3
+1033 8179
+1373 8017
+1033 1033
+
+<b>Output:</b>
+6
+7
+0
+</pre>
+
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-4453360425583535";
+/* Spoj - wiersz */
+google_ad_slot = "3432347421";
+google_ad_width = 728;
+google_ad_height = 15;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+<hr>
+<table border=0 cellspacing=0 cellpadding=0 align=left style="margin-bottom:10px" class="probleminfo">
+<tr><td>Added by:</td><td><a href="/users/overwise">Robin Nittka</a></td></tr>
+<tr><td>Date:</td><td>2007-10-02</td></tr>
+<tr><td>Time limit:</td><td>3s
+</td></tr>
+<tr><td>Source limit:</td><td>50000B</td></tr>
+<tr><td>Languages:</td><td>All except: ERL JS PERL 6 </td></tr>
+<tr><td>Resource:</td><td>ACM ICPC NWERC 2006</td></tr>	
+</table><!-- google_ad_section_end -->
+
+<div id="ccontent">
+<!-- google_ad_section_start -->
+
+<hr style="clear:both;"/>
+<a href="#" onclick="toggleComments(); return false;"><span id="comments_sh">hide</span> comments</a><br/>
+
+<a id="comments"></a>
+<table id="comments_table" width="100%">
+		<tr>
+		<td colspan="2">
+				</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+		<script type="text/javascript"><!--
+google_ad_client = "ca-pub-4453360425583535";
+/* Spoj - wiersz */
+google_ad_slot = "3432347421";
+google_ad_width = 728;
+google_ad_height = 15;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+		</td>
+	</tr>
+	
+	<script language="JavaScript">
+	<!--
+	$(document).ready(function(){
+        $('.pager_link').bind('click', function(me){
+                var href=$(me.currentTarget).attr('href');
+		$('#ccontent').animate({opacity: 0.5},1);
+                $.ajax({
+                        type: "GET",
+                        url: href+",ajax=1",
+                        contentType: "application/x-www-form-urlencoded;charset=ISO-8859-2",
+                        success: function(data){
+                                $('#ccontent').html(data);
+				$('#ccontent').animate({opacity: 1.0},1);
+                        },
+                        error: function(err){
+                                alert('error');
+                        }
+                });
+                return false;
+        });
+	});
+	-->
+	</script>
+	
+
+			
+	<tr>
+		<td colspan="2" class="comm comm_odd ">
+		<font >
+		2011-05-23 17:47:54 <b><a href="/users/albertg">Albert Gevorgyan(Quantum)</a></b> 
+		</font>
+					(<a href="/comment/PPATH/sh/19025/"><font color="red"><b>hide</b></font></a>)
+							(<a href="/comment/PPATH/edit/19025/"><b>edit</b></a>) 
+							(<a href="/comment/PPATH/del/19025/" onclick="javascript:return confirm('Are you sure you want to delete this comment ?')"><font color="red"><b>delete</b></font></a>)
+				<br/>
+				I tink we can solve it with bfs.
+						</td>
+	</tr>
+				
+	<tr>
+		<td colspan="2" class="comm comm_even ">
+		<font >
+		2011-01-26 16:31:28 <b><a href="/users/xadur">irakli</a></b> 
+		</font>
+					(<a href="/comment/PPATH/sh/15168/"><font color="red"><b>hide</b></font></a>)
+							(<a href="/comment/PPATH/edit/15168/"><b>edit</b></a>) 
+							(<a href="/comment/PPATH/del/15168/" onclick="javascript:return confirm('Are you sure you want to delete this comment ?')"><font color="red"><b>delete</b></font></a>)
+				<br/>
+				i'll solve it with dejikstra or flloyd warshell. any better ideas?
+						</td>
+	</tr>
+				
+	<tr>
+		<td colspan="2" class="comm comm_odd ">
+		<font >
+		2010-12-28 11:42:52 <b><a href="/users/gkt">bgbraithwaite</a></b> 
+		</font>
+					(<a href="/comment/PPATH/sh/14409/"><font color="red"><b>hide</b></font></a>)
+							(<a href="/comment/PPATH/edit/14409/"><b>edit</b></a>) 
+							(<a href="/comment/PPATH/del/14409/" onclick="javascript:return confirm('Are you sure you want to delete this comment ?')"><font color="red"><b>delete</b></font></a>)
+				<br/>
+				DONE!
+						</td>
+	</tr>
+				
+	<tr>
+		<td colspan="2" class="comm comm_even ">
+		<font >
+		2010-12-21 14:29:05 <b><a href="/users/sabuna98">saba bezhashvili</a></b> 
+		</font>
+					(<a href="/comment/PPATH/sh/14245/"><font color="red"><b>hide</b></font></a>)
+							(<a href="/comment/PPATH/edit/14245/"><b>edit</b></a>) 
+							(<a href="/comment/PPATH/del/14245/" onclick="javascript:return confirm('Are you sure you want to delete this comment ?')"><font color="red"><b>delete</b></font></a>)
+				<br/>
+				
+				<br/><br/>
+		<b>Last edit: 2010-12-21 14:37:17</b>
+						</td>
+	</tr>
+			
+</table>
+
+
+<script language="javascript" type="text/javascript">
+<!--
+function getCookieVal (offset) {
+        var endstr = document.cookie.indexOf (";", offset);
+        if (endstr == -1) { 
+                endstr = document.cookie.length; 
+        }
+        return unescape(document.cookie.substring(offset, endstr));
+}
+
+function GetCookie (name) {
+  var arg = name + "=";
+  var alen = arg.length;
+  var clen = document.cookie.length;
+  var i = 0;
+  while (i < clen) {
+    var j = i + alen;
+    if (document.cookie.substring(i, j) == arg) {
+      return getCookieVal (j);
+      }
+    i = document.cookie.indexOf(" ", i) + 1;
+    if (i == 0) break; 
+    }
+  return null;
+}
+
+function toggleComments() {
+        var a = document.getElementById('comments_table');
+        var d = a.style.display;
+        if( d == "" || d == "block" ){
+                d = "none";
+                document.getElementById('comments_sh').innerHTML = 'show';
+        } else {
+                d = "block";
+                document.getElementById('comments_sh').innerHTML = 'hide';
+        }
+        a.style.display = d;
+        document.cookie="comments_table="+d+"; path=/;";
+}
+
+if( GetCookie('comments_table') == 'none' ){
+        document.getElementById('comments_sh').innerHTML = 'show';
+        document.getElementById('comments_table').style.display = 'hide';
+}
+
+-->
+</script>
+
+
+<!-- google_ad_section_end -->
+</div>
+<table width="100%">
+                <tr>
+                <td colspan="2" height="20px"></td>
+        </tr>
+        <form method="post" action="/comment/PPATH/add/">
+        <tr> <td style="padding-left:5px;" colspan="2">Leave a Comment</td> </tr>
+        <tr>
+                <td valign="top"></td>
+                <td><textarea name="content" cols="40" rows="3"></textarea></td>
+        </tr>
+                <tr>
+                <td colspan="2" style="padding-left: 5px;">
+                        <input type="submit" value="Publish"/>
+                        <input type="hidden" name="pcode" value="PPATH"/>
+                </td>
+        </tr>
+<tr>
+<td colspan="2" class="smallgrey" style="padding-left:5px;">
+Notes:
+<br>1. Don't post any source code here.
+<br>2. Please be careful, leave short comments only. Don't spam here.
+<br>3. For more discussion (hints, ideas, solutions) please visit our <a href="/forum">forum</a>.
+<br>4. Authors of the problems are allowed to delete the post and use html code here (e.g. to provide some useful links).
+</td>
+</tr>
+        </form>
+        </table>
+
+</div>
+        </td>
+<tr>
+        <td style="padding:0px" colspan="2"><center>
+                
+</center></td>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr>
+<td colspan="2" class="footer">
+<div class="a-footer"></div>
+<script language="javascript" type="text/javascript">
+<!--
+function swapSheet(sheet, caller) {
+    document.getElementById('theme').href=sheet;
+    document.cookie="css_0="+sheet+"; path=/;";
+    caller.href="#bottom";
+}
+
+function setWidth(w, caller) {
+    document.getElementById('maintable').style.width=w;
+    document.cookie="res="+w+"; path=/;";
+    caller.href="#bottom";
+}
+
+
+
+//-->
+
+</script>
+        <table width="100%">
+    <tr>
+	<td align="left" width=10% class="cfooter">
+	<a href="/info/">About SPOJ</a>
+	</td>
+	<td align="center" class="cfooter">
+	    width:
+	    <a href="/?rsl=855px"  onClick="setWidth('855px', this)">900</a>
+	    <a href="/?rsl=980px"  onClick="setWidth('980px', this)">1024</a>
+	    <a href="/?rsl=100%" onClick="setWidth('100%', this)">Full</a>
+	    &nbsp;&nbsp;
+	    theme:
+	    <a href="/?css=/themes/skin1.css" onClick="swapSheet('/themes/skin1.css', this)">olive</a>
+	    <a href="/?css=/themes/skin2.css" onClick="swapSheet('/themes/skin2.css', this)">banana</a>
+	    <a href="/?css=/themes/skin3.css" onClick="swapSheet('/themes/skin3.css', this)">plum</a>
+	    	</td>
+		<td align="center" class="cfooter">
+		 <span title="The discussion channel of the Sphere Online Judge community.">
+		 <a href="irc://irc.freenode.net/spoj"><b>#spoj</b> at freenode</a>
+		 </span>
+	</td>
+		<td width=10% class="cfooter" style="text-align:right">
+		<a href="/rss/" ><img src="/gfx/rss10x10.gif" border=0>&nbsp;RSS</a>&nbsp;
+	</div>
+	</td>
+    </tr>
+    </table>
+    </tr></table>
+</center>
+<div class="a-header"></div>
+
+<div id="fb-root"></div>
+<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
+
+<div style="font-size:10px; margin-top:4px; color: rgb(85,80,95);"><center>
+<a href="http://www.spoj.pl" style="color:black">SPOJ</a>
+System &copy; 2011
+<a href="http://sphere-research.com" style="color:black">Sphere Research Labs | Projekty informatyczne i aplikacje na zamówienie</a>. 
+All Rights Reserved.</center></div>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-10507872-1']);
+      _gaq.push(['_trackPageview']);
+        (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		      })();
+		      </script>
+		      
+</body>
+</html>

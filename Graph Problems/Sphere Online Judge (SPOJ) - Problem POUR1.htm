@@ -1,0 +1,602 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<title>Sphere Online Judge (SPOJ)  - Problem POUR1</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" id="metatag">
+<META NAME="Keywords" CONTENT="programming, language, algorithm, spoj, contest, contester, Java, C#, Pascal, C, C++, python, ruby, caml, ocaml, perl, haskell, lisp, prolog, fortran, assembler, asembler, functional, online, judge, problem, problemset, ACM">
+
+<link href="/gfx/favicon.png" rel="shortcut icon" type="image/x-icon">
+<link href="/rss/" rel="alternate" type="application/rss+xml" title="RSS Feed">
+<link href="/themes/common.css" rel="stylesheet" type="text/css" id="theme">
+<link href="/style.css" rel="stylesheet" type="text/css" id="theme">
+<link href="/themes/tooltips.css" rel="stylesheet" type="text/css" id="theme">
+<script type='text/javascript' src='/gfx/jquery.js'></script>
+<script type="text/javascript" src="/gfx/jquery.timers.js"></script>
+<style type="text/css">
+<!--
+.maintable {width: 755px;} 
+-->
+</style>
+<script type="text/javascript" language="javascript">
+<!--
+function UnCryptMailto(s) {
+	var n=0;
+	var r="";
+	for(var i=0;i<s.length;i++) {		
+		n=s.charCodeAt(i); 
+		if (n>=8364) {n = 128;}
+		r += String.fromCharCode(n+(2));	
+	}
+	return r;
+}
+function linkTo_UnCryptMailto(s)	{
+	location.href=UnCryptMailto(s);
+}
+// -->
+</script>
+
+<script type="text/javascript">
+function recordOutboundLink(link, category, action) {
+  try {
+    var pageTracker=_gat._getTracker("UA-XXXXX-X");
+    pageTracker._trackEvent(category, action);
+    setTimeout('document.location = "' + link.href + '"', 100)
+  }catch(err){}
+}
+</script>
+
+    <script type="text/javascript" src="/gfx/SyntaxHighlighter/scripts/shCore.js"></script>
+	<script type="text/javascript" src="/gfx/SyntaxHighlighter/scripts/shBrushCpp.js"></script>
+	<script type="text/javascript" src="/gfx/SyntaxHighlighter/scripts/shBrushCSharp.js"></script>
+    <script type="text/javascript" src="/gfx/SyntaxHighlighter/scripts/shBrushJava.js"></script>
+    <script type="text/javascript" src="/gfx/SyntaxHighlighter/scripts/shBrushPhp.js"></script>
+    <script type="text/javascript" src="/gfx/SyntaxHighlighter/scripts/shBrushPython.js"></script>
+	<link type="text/css" rel="stylesheet" href="/gfx/SyntaxHighlighter/styles/shCore.css"/>
+	<link type="text/css" rel="stylesheet" href="/gfx/SyntaxHighlighter/styles/shThemeDefault.css"/>
+	
+	<script type="text/javascript">
+		SyntaxHighlighter.all();
+	</script>
+	
+
+		<meta property="og:site_name" content="Spoj.pl"/>
+    <meta property="og:image" content="http://www.spoj.pl/gfx/spoj-fb.jpg"/>
+
+</head>
+<body>
+<center>
+<table cellpadding="10" cellspacing="0" class="maintable" id="maintable">
+<tr>
+    <td colspan="2" class="header">
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+		<td class="headerleft"/>
+		<td class="headercenter">
+<h1><IMG alt="Sphere Online Judge" title="Sphere Online Judge" src="/gfx/sphere-spoj-small.png" border=0 style="margin-top:-4px;margin-bottom:-4px"></h1>
+
+		<div style="position: relative; width: 807px;">
+		<div style="position: absolute; left: -192px; top: 8px;"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-4453360425583535";
+/* Spoj - wiezowiec */
+google_ad_slot = "2703472077";
+google_ad_width = 160;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+		</div>
+		</td>
+		<td class="headerright"/>
+	</tr>
+	</table>
+    </td>
+</tr>
+<tr><td class="menu" width="92" valign="top">
+
+
+<div class="menucmd"><a href="/logout"><b style="font-weight:normal">Log Out</b></a><br><b style="font-weight:normal; margin-right:-100px">muntasir</b><br><hr><a href="/uploads">upload&nbsp;files</a><br><a href="/contests/add">add&nbsp;contest</a><br><a href="/groups/add">add&nbsp;group</a><br><a href="/groups">group list</a><br><a href="/problems/my">problem&nbsp;list</a><br><hr><a href="/myaccount">my account</a><br><a href="/tutorials">tutorials</a><br><br><a href="/status">status</a><br><a href="/submit">submit</a><br><a href="/problems/classical/">problems</a><br><a href="/search">search</a><br><br><a href="/">news</a><br><a href="/contests">contests</a><br><a href="/ranks/">ranks</a><br><br><a href="/forum">forum</a><br><a href="/comments">comments</a><br><a href="/tools">tools</a><br><a href="/credits">credits</a><br><hr></div><a href="/problems/classical/"></a><br>
+
+	<div class="time">
+Server time:</div>
+<div class="time">
+2011-10-19
+<br>
+<b>22 : 40 : 02</b>
+</div>
+
+</td><td style="width: 748px; padding:0px;" valign="top" class="content0">
+        <table width="100%" cellpadding="0" cellspacing="0">
+        <tr>
+                <td style="padding:0px;" colspan="2"><center>
+                                
+                </center></td>
+        </tr>
+        <tr>
+                <td class="content" width="99%" style="padding: 10px"><script type='text/javascript' src='/gfx/jquery.bgiframe.js'></script>
+<script type='text/javascript' src='/gfx/jquery.tooltip.js'></script>
+<script type='text/javascript' src='/gfx/jquery.cxhelp.js'></script>
+
+
+
+ <!-- wykorzystywane w pcontent.html (by wiele) -->
+
+<table class="problems" width="100%">
+<tr class="navigation">
+<td><a href="/submit/POUR1/">Submit</a></td>
+<td><a href="/status/POUR1,muntasir/">My submissions</a></td>
+<td><a href="/status/POUR1/">All submissions</a></td>
+<td><a href="/ranks/POUR1/">Best solutions</a></td>
+<td><a href="/problems/POUR1.ps">PS</a></td>
+<td><a href="/problems/POUR1.pdf">PDF</a></td>
+<td><a href="/problems/classical/">Back to list</a></td>
+</tr>
+</table>
+
+<div class="prob">
+
+<!-- google_ad_section_start -->
+<!-- plik z pomoca kontekstowa (cxhelp_*) dziedziczony po pindex.html -->
+
+<div style="position: absolute;">
+<div class="fb-like" data-href="http://www.spoj.pl/problems/POUR1/" data-send="true" data-layout="box_count" data-width="70" data-show-faces="false"></div>
+</div>
+
+<script type="text/javascript" src="/gfx/jscripts/tiny_mce/plugins/asciimath/js/ASCIIMathMLwFallback.js"></script>
+<!--script type="text/javascript" src="/gfx/jscripts/tiny_mce/plugins/asciisvg/js/ASCIIsvgPI.js"></script-->
+<script type="text/javascript">
+<!--
+var AScgiloc = 'http://www.imathas.com/imathas/filter/graph/svgimg.php';
+var AMTcgiloc = "/files/gif/";
+-->
+</script>
+
+<table width="100%" style="margin-top:10px">
+<tr>
+	<td>
+		<h2>SPOJ Problem Set (classical)</h2>
+				<h1>25. Pouring water</h1>
+		<h2>Problem code: POUR1</h2>
+	</td>
+	</tr>
+</table>
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-4453360425583535";
+/* Spoj - baner gĂłrny */
+google_ad_slot = "5796055248";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+<p align="justify">
+<P align=justify>
+Given two vessels, one of which can accommodate <i>a</i> litres of water and the other - <i>b</i> litres of water, determine the number of steps required to obtain exactly <i>c</i> litres of water in one of the vessels.</p>
+<P align=justify>
+At the beginning both vessels are empty. The following operations are counted as 'steps':
+<div align=left>
+<ul>
+<li>emptying a vessel,
+<li>filling a vessel,
+<li>pouring water from one vessel to the other, without spilling, until one of the vessels is either full or empty.
+</ul>
+</div>
+</p>
+<H3>Input</h3>
+<P align=justify>
+An integer <i>t</i>, 1<=<i>t</i><=100, denoting the number of testcases, followed by <i>t</i> sets of input data, each consisting of three positive integers <i>a, b, c</i>, not larger than 40000, given in separate lines.</p>
+<H3>Output</h3>
+<P align=justify>
+For each set of input data, output the minimum number of steps required to obtain c litres, or -1 if this is impossible.
+</p>
+<H3>Example</h3>
+<div align=left>
+Sample input:
+<pre>2
+5
+2
+3
+2
+3
+4
+</pre>
+</p>
+Sample output:
+<pre>
+2
+-1
+</pre>
+</div>
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-4453360425583535";
+/* Spoj - wiersz */
+google_ad_slot = "3432347421";
+google_ad_width = 728;
+google_ad_height = 15;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+<hr>
+<table border=0 cellspacing=0 cellpadding=0 align=left style="margin-bottom:10px" class="probleminfo">
+<tr><td>Added by:</td><td><a href="/users/adrian">Adrian Kosowski</a></td></tr>
+<tr><td>Date:</td><td>2004-05-31</td></tr>
+<tr><td>Time limit:</td><td>1s
+</td></tr>
+<tr><td>Source limit:</td><td>50000B</td></tr>
+<tr><td>Languages:</td><td>All except: PERL 6 </td></tr>
+<tr><td>Resource:</td><td>An ancient problem, formulated in these words by Mr Tadeusz Ratajczak</td></tr>	
+</table><!-- google_ad_section_end -->
+
+<div id="ccontent">
+<!-- google_ad_section_start -->
+
+<hr style="clear:both;"/>
+<a href="#" onclick="toggleComments(); return false;"><span id="comments_sh">hide</span> comments</a><br/>
+
+<a id="comments"></a>
+<table id="comments_table" width="100%">
+		<tr>
+		<td colspan="2">
+		<table class="navigation" width="99%">
+<tr><td align="left" width="27%">
+<i>Previous</i></td><td class="navigationcenter" width="25%">&nbsp;1</td> 
+<td class="navigationcenter" width="25%"><a href="/problems/POUR1/cstart=10" class="pager_link">&nbsp;2</a></td> 
+<td align="right" width="25%">
+<a href="/problems/POUR1/cstart=10" class="pager_link">Next</a> <a href="/problems/POUR1/cstart=10" class="pager_link">&gt;</a></td></table>		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+		<script type="text/javascript"><!--
+google_ad_client = "ca-pub-4453360425583535";
+/* Spoj - wiersz */
+google_ad_slot = "3432347421";
+google_ad_width = 728;
+google_ad_height = 15;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+		</td>
+	</tr>
+	
+	<script language="JavaScript">
+	<!--
+	$(document).ready(function(){
+        $('.pager_link').bind('click', function(me){
+                var href=$(me.currentTarget).attr('href');
+		$('#ccontent').animate({opacity: 0.5},1);
+                $.ajax({
+                        type: "GET",
+                        url: href+",ajax=1",
+                        contentType: "application/x-www-form-urlencoded;charset=ISO-8859-2",
+                        success: function(data){
+                                $('#ccontent').html(data);
+				$('#ccontent').animate({opacity: 1.0},1);
+                        },
+                        error: function(err){
+                                alert('error');
+                        }
+                });
+                return false;
+        });
+	});
+	-->
+	</script>
+	
+
+			
+	<tr>
+		<td colspan="2" class="comm comm_odd ">
+		<font >
+		2011-06-28 11:53:21 <b><a href="/users/icicle">Shreya Inamdar</a></b> 
+		</font>
+					(<a href="/comment/POUR1/sh/20516/"><font color="red"><b>hide</b></font></a>)
+							(<a href="/comment/POUR1/edit/20516/"><b>edit</b></a>) 
+							(<a href="/comment/POUR1/del/20516/" onclick="javascript:return confirm('Are you sure you want to delete this comment ?')"><font color="red"><b>delete</b></font></a>)
+				<br/>
+				Any strong test cases or commonly overlooked impossible cases?<br/>
+						</td>
+	</tr>
+				
+	<tr>
+		<td colspan="2" class="comm comm_even ">
+		<font >
+		2011-04-17 01:53:24 <b><a href="/users/leppyr64">LeppyR64</a></b> 
+		</font>
+					(<a href="/comment/POUR1/sh/17937/"><font color="red"><b>hide</b></font></a>)
+							(<a href="/comment/POUR1/edit/17937/"><b>edit</b></a>) 
+							(<a href="/comment/POUR1/del/17937/" onclick="javascript:return confirm('Are you sure you want to delete this comment ?')"><font color="red"><b>delete</b></font></a>)
+				<br/>
+				The four needs to be in one cup, not split between the two.
+						</td>
+	</tr>
+				
+	<tr>
+		<td colspan="2" class="comm comm_odd ">
+		<font >
+		2011-03-05 22:03:35 <b><a href="/users/snip3r">S</a></b> 
+		</font>
+					(<a href="/comment/POUR1/sh/16390/"><font color="red"><b>hide</b></font></a>)
+							(<a href="/comment/POUR1/edit/16390/"><b>edit</b></a>) 
+							(<a href="/comment/POUR1/del/16390/" onclick="javascript:return confirm('Are you sure you want to delete this comment ?')"><font color="red"><b>delete</b></font></a>)
+				<br/>
+				y cant we get 4 from 2 and 3<br/>2-0,0-2,2-2 hence 4??
+						</td>
+	</tr>
+				
+	<tr>
+		<td colspan="2" class="comm comm_even ">
+		<font >
+		2011-03-01 22:18:23 <b><a href="/users/multisystem">multisystem</a></b> 
+		</font>
+					(<a href="/comment/POUR1/sh/16288/"><font color="red"><b>hide</b></font></a>)
+							(<a href="/comment/POUR1/edit/16288/"><b>edit</b></a>) 
+							(<a href="/comment/POUR1/del/16288/" onclick="javascript:return confirm('Are you sure you want to delete this comment ?')"><font color="red"><b>delete</b></font></a>)
+				<br/>
+				@pengzuojie<br/>The same with me :D<br/><br/>The solution is about simulating two cases and choosing the minimum, with simple math test to exclude impossible cases.
+				<br/><br/>
+		<b>Last edit: 2011-03-01 22:19:42</b>
+						</td>
+	</tr>
+				
+	<tr>
+		<td colspan="2" class="comm comm_odd ">
+		<font >
+		2011-02-23 10:18:50 <b><a href="/users/sumanthpuram">jack Wilshere</a></b> 
+		</font>
+					(<a href="/comment/POUR1/sh/16090/"><font color="red"><b>hide</b></font></a>)
+							(<a href="/comment/POUR1/edit/16090/"><b>edit</b></a>) 
+							(<a href="/comment/POUR1/del/16090/" onclick="javascript:return confirm('Are you sure you want to delete this comment ?')"><font color="red"><b>delete</b></font></a>)
+				<br/>
+				In the following, a-b (Current volume occupied in a&b litre containers respectively)<br/><br/>0-0 -&gt; 12-0 -&gt; 1-11 -&gt; 1-0 -&gt; 0-1 -&gt; 12-1 -&gt; 2-11<br/>-&gt; 2-0 -&gt; 0-2 -&gt; 12-2 -&gt; 3-11 -&gt; 3-0 -&gt; 0-3 -&gt; 12-3 -&gt; 4-11 -&gt; 4-0 -&gt; 0-4 -&gt; 12-4 -&gt; 5-11 -&gt; 5-0 -&gt; 0-5 -&gt; 12-5 -&gt; 6-11 <br/>
+						</td>
+	</tr>
+				
+	<tr>
+		<td colspan="2" class="comm comm_even ">
+		<font >
+		2011-02-17 18:41:41 <b><a href="/users/sreenatha_123">sreenatha</a></b> 
+		</font>
+					(<a href="/comment/POUR1/sh/15724/"><font color="red"><b>hide</b></font></a>)
+							(<a href="/comment/POUR1/edit/15724/"><b>edit</b></a>) 
+							(<a href="/comment/POUR1/del/15724/" onclick="javascript:return confirm('Are you sure you want to delete this comment ?')"><font color="red"><b>delete</b></font></a>)
+				<br/>
+				i think the answer for a=12 b=11 and c=6 is zero.if anyone thinks otherwise,please post ur answer<br/>
+						</td>
+	</tr>
+				
+	<tr>
+		<td colspan="2" class="comm comm_odd ">
+		<font >
+		2010-12-11 19:59:03 <b><a href="/users/naive_coder">.::Baba Ramdev::.</a></b> 
+		</font>
+					(<a href="/comment/POUR1/sh/13861/"><font color="red"><b>hide</b></font></a>)
+							(<a href="/comment/POUR1/edit/13861/"><b>edit</b></a>) 
+							(<a href="/comment/POUR1/del/13861/" onclick="javascript:return confirm('Are you sure you want to delete this comment ?')"><font color="red"><b>delete</b></font></a>)
+				<br/>
+				can the answer be odd number?<br/>(except 1)<br/>EDIT: I needed to know this to verify my mathematical solution.But finally decided to do a simulation.It worked!. <br/>
+				<br/><br/>
+		<b>Last edit: 2010-12-11 23:13:49</b>
+						</td>
+	</tr>
+				
+	<tr>
+		<td colspan="2" class="comm comm_even ">
+		<font >
+		2010-07-22 11:27:44 <b><a href="/users/pzjay">pengzuojie</a></b> 
+		</font>
+					(<a href="/comment/POUR1/sh/10236/"><font color="red"><b>hide</b></font></a>)
+							(<a href="/comment/POUR1/edit/10236/"><b>edit</b></a>) 
+							(<a href="/comment/POUR1/del/10236/" onclick="javascript:return confirm('Are you sure you want to delete this comment ?')"><font color="red"><b>delete</b></font></a>)
+				<br/>
+				I can't believe it that when I used BFS, I got the TLE,but when I change from bfs to simulate, it's just spent 10ms,what amazing...
+						</td>
+	</tr>
+				
+	<tr>
+		<td colspan="2" class="comm comm_odd ">
+		<font >
+		2010-05-06 23:18:20 <b><a href="/users/madhava_rao">madhav</a></b> 
+		</font>
+					(<a href="/comment/POUR1/sh/8495/"><font color="red"><b>hide</b></font></a>)
+							(<a href="/comment/POUR1/edit/8495/"><b>edit</b></a>) 
+							(<a href="/comment/POUR1/del/8495/" onclick="javascript:return confirm('Are you sure you want to delete this comment ?')"><font color="red"><b>delete</b></font></a>)
+				<br/>
+				check out the forum guys. We have good solutions for this problem and hence a lot to learn from this problem :)
+				<br/><br/>
+		<b>Last edit: 2010-05-06 23:19:32</b>
+						</td>
+	</tr>
+				
+	<tr>
+		<td colspan="2" class="comm comm_even ">
+		<font >
+		2010-04-18 17:04:17 <b><a href="/users/husseincoder">hussein</a></b> 
+		</font>
+					(<a href="/comment/POUR1/sh/7998/"><font color="red"><b>hide</b></font></a>)
+							(<a href="/comment/POUR1/edit/7998/"><b>edit</b></a>) 
+							(<a href="/comment/POUR1/del/7998/" onclick="javascript:return confirm('Are you sure you want to delete this comment ?')"><font color="red"><b>delete</b></font></a>)
+				<br/>
+				BFS and a bit of math to prune impossible cases will suffice :)
+						</td>
+	</tr>
+			
+</table>
+
+
+<script language="javascript" type="text/javascript">
+<!--
+function getCookieVal (offset) {
+        var endstr = document.cookie.indexOf (";", offset);
+        if (endstr == -1) { 
+                endstr = document.cookie.length; 
+        }
+        return unescape(document.cookie.substring(offset, endstr));
+}
+
+function GetCookie (name) {
+  var arg = name + "=";
+  var alen = arg.length;
+  var clen = document.cookie.length;
+  var i = 0;
+  while (i < clen) {
+    var j = i + alen;
+    if (document.cookie.substring(i, j) == arg) {
+      return getCookieVal (j);
+      }
+    i = document.cookie.indexOf(" ", i) + 1;
+    if (i == 0) break; 
+    }
+  return null;
+}
+
+function toggleComments() {
+        var a = document.getElementById('comments_table');
+        var d = a.style.display;
+        if( d == "" || d == "block" ){
+                d = "none";
+                document.getElementById('comments_sh').innerHTML = 'show';
+        } else {
+                d = "block";
+                document.getElementById('comments_sh').innerHTML = 'hide';
+        }
+        a.style.display = d;
+        document.cookie="comments_table="+d+"; path=/;";
+}
+
+if( GetCookie('comments_table') == 'none' ){
+        document.getElementById('comments_sh').innerHTML = 'show';
+        document.getElementById('comments_table').style.display = 'hide';
+}
+
+-->
+</script>
+
+
+<!-- google_ad_section_end -->
+</div>
+<table width="100%">
+                <tr>
+                <td colspan="2" height="20px"></td>
+        </tr>
+        <form method="post" action="/comment/POUR1/add/">
+        <tr> <td style="padding-left:5px;" colspan="2">Leave a Comment</td> </tr>
+        <tr>
+                <td valign="top"></td>
+                <td><textarea name="content" cols="40" rows="3"></textarea></td>
+        </tr>
+                <tr>
+                <td colspan="2" style="padding-left: 5px;">
+                        <input type="submit" value="Publish"/>
+                        <input type="hidden" name="pcode" value="POUR1"/>
+                </td>
+        </tr>
+<tr>
+<td colspan="2" class="smallgrey" style="padding-left:5px;">
+Notes:
+<br>1. Don't post any source code here.
+<br>2. Please be careful, leave short comments only. Don't spam here.
+<br>3. For more discussion (hints, ideas, solutions) please visit our <a href="/forum">forum</a>.
+<br>4. Authors of the problems are allowed to delete the post and use html code here (e.g. to provide some useful links).
+</td>
+</tr>
+        </form>
+        </table>
+
+</div>
+        </td>
+<tr>
+        <td style="padding:0px" colspan="2"><center>
+                
+</center></td>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr>
+<td colspan="2" class="footer">
+<div class="a-footer"></div>
+<script language="javascript" type="text/javascript">
+<!--
+function swapSheet(sheet, caller) {
+    document.getElementById('theme').href=sheet;
+    document.cookie="css_0="+sheet+"; path=/;";
+    caller.href="#bottom";
+}
+
+function setWidth(w, caller) {
+    document.getElementById('maintable').style.width=w;
+    document.cookie="res="+w+"; path=/;";
+    caller.href="#bottom";
+}
+
+
+
+//-->
+
+</script>
+        <table width="100%">
+    <tr>
+	<td align="left" width=10% class="cfooter">
+	<a href="/info/">About SPOJ</a>
+	</td>
+	<td align="center" class="cfooter">
+	    width:
+	    <a href="/?rsl=855px"  onClick="setWidth('855px', this)">900</a>
+	    <a href="/?rsl=980px"  onClick="setWidth('980px', this)">1024</a>
+	    <a href="/?rsl=100%" onClick="setWidth('100%', this)">Full</a>
+	    &nbsp;&nbsp;
+	    theme:
+	    <a href="/?css=/themes/skin1.css" onClick="swapSheet('/themes/skin1.css', this)">olive</a>
+	    <a href="/?css=/themes/skin2.css" onClick="swapSheet('/themes/skin2.css', this)">banana</a>
+	    <a href="/?css=/themes/skin3.css" onClick="swapSheet('/themes/skin3.css', this)">plum</a>
+	    	</td>
+		<td align="center" class="cfooter">
+		 <span title="The discussion channel of the Sphere Online Judge community.">
+		 <a href="irc://irc.freenode.net/spoj"><b>#spoj</b> at freenode</a>
+		 </span>
+	</td>
+		<td width=10% class="cfooter" style="text-align:right">
+		<a href="/rss/" ><img src="/gfx/rss10x10.gif" border=0>&nbsp;RSS</a>&nbsp;
+	</div>
+	</td>
+    </tr>
+    </table>
+    </tr></table>
+</center>
+<div class="a-header"></div>
+
+<div id="fb-root"></div>
+<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
+
+<div style="font-size:10px; margin-top:4px; color: rgb(85,80,95);"><center>
+<a href="http://www.spoj.pl" style="color:black">SPOJ</a>
+System &copy; 2011
+<a href="http://sphere-research.com" style="color:black">Sphere Research Labs | Projekty informatyczne i aplikacje na zamówienie</a>. 
+All Rights Reserved.</center></div>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-10507872-1']);
+      _gaq.push(['_trackPageview']);
+        (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		      })();
+		      </script>
+		      
+</body>
+</html>

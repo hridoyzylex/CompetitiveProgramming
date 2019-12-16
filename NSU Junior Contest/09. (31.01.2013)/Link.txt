@@ -1,0 +1,3 @@
+http://acm.hust.edu.cn:8080/judge/contest/view.action?cid=19099#overview
+
+Password: nsu

@@ -1,0 +1,607 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+<title>Sphere Online Judge (SPOJ)  - Problem BUGLIFE</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" id="metatag">
+<META NAME="Keywords" CONTENT="programming, language, algorithm, spoj, contest, contester, Java, C#, Pascal, C, C++, python, ruby, caml, ocaml, perl, haskell, lisp, prolog, fortran, assembler, asembler, functional, online, judge, problem, problemset, ACM">
+
+<link href="/gfx/favicon.png" rel="shortcut icon" type="image/x-icon">
+<link href="/rss/" rel="alternate" type="application/rss+xml" title="RSS Feed">
+<link href="/themes/common.css" rel="stylesheet" type="text/css" id="theme">
+<link href="/style.css" rel="stylesheet" type="text/css" id="theme">
+<link href="/themes/tooltips.css" rel="stylesheet" type="text/css" id="theme">
+<script type='text/javascript' src='/gfx/jquery.js'></script>
+<script type="text/javascript" src="/gfx/jquery.timers.js"></script>
+<style type="text/css">
+<!--
+.maintable {width: 755px;} 
+-->
+</style>
+<script type="text/javascript" language="javascript">
+<!--
+function UnCryptMailto(s) {
+	var n=0;
+	var r="";
+	for(var i=0;i<s.length;i++) {		
+		n=s.charCodeAt(i); 
+		if (n>=8364) {n = 128;}
+		r += String.fromCharCode(n+(2));	
+	}
+	return r;
+}
+function linkTo_UnCryptMailto(s)	{
+	location.href=UnCryptMailto(s);
+}
+// -->
+</script>
+
+<script type="text/javascript">
+function recordOutboundLink(link, category, action) {
+  try {
+    var pageTracker=_gat._getTracker("UA-XXXXX-X");
+    pageTracker._trackEvent(category, action);
+    setTimeout('document.location = "' + link.href + '"', 100)
+  }catch(err){}
+}
+</script>
+
+    <script type="text/javascript" src="/gfx/SyntaxHighlighter/scripts/shCore.js"></script>
+	<script type="text/javascript" src="/gfx/SyntaxHighlighter/scripts/shBrushCpp.js"></script>
+	<script type="text/javascript" src="/gfx/SyntaxHighlighter/scripts/shBrushCSharp.js"></script>
+    <script type="text/javascript" src="/gfx/SyntaxHighlighter/scripts/shBrushJava.js"></script>
+    <script type="text/javascript" src="/gfx/SyntaxHighlighter/scripts/shBrushPhp.js"></script>
+    <script type="text/javascript" src="/gfx/SyntaxHighlighter/scripts/shBrushPython.js"></script>
+	<link type="text/css" rel="stylesheet" href="/gfx/SyntaxHighlighter/styles/shCore.css"/>
+	<link type="text/css" rel="stylesheet" href="/gfx/SyntaxHighlighter/styles/shThemeDefault.css"/>
+	
+	<script type="text/javascript">
+		SyntaxHighlighter.all();
+	</script>
+	
+
+		<meta property="og:site_name" content="Spoj.pl"/>
+    <meta property="og:image" content="http://www.spoj.pl/gfx/spoj-fb.jpg"/>
+
+</head>
+<body>
+<center>
+<table cellpadding="10" cellspacing="0" class="maintable" id="maintable">
+<tr>
+    <td colspan="2" class="header">
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+		<td class="headerleft"/>
+		<td class="headercenter">
+<h1><IMG alt="Sphere Online Judge" title="Sphere Online Judge" src="/gfx/sphere-spoj-small.png" border=0 style="margin-top:-4px;margin-bottom:-4px"></h1>
+
+		<div style="position: relative; width: 807px;">
+		<div style="position: absolute; left: -192px; top: 8px;"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-4453360425583535";
+/* Spoj - wiezowiec */
+google_ad_slot = "2703472077";
+google_ad_width = 160;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+		</div>
+		</td>
+		<td class="headerright"/>
+	</tr>
+	</table>
+    </td>
+</tr>
+<tr><td class="menu" width="92" valign="top">
+
+
+<div class="menucmd"><a href="/logout"><b style="font-weight:normal">Log Out</b></a><br><b style="font-weight:normal; margin-right:-100px">muntasir</b><br><hr><a href="/uploads">upload&nbsp;files</a><br><a href="/contests/add">add&nbsp;contest</a><br><a href="/groups/add">add&nbsp;group</a><br><a href="/groups">group list</a><br><a href="/problems/my">problem&nbsp;list</a><br><hr><a href="/myaccount">my account</a><br><a href="/tutorials">tutorials</a><br><br><a href="/status">status</a><br><a href="/submit">submit</a><br><a href="/problems/classical/">problems</a><br><a href="/search">search</a><br><br><a href="/">news</a><br><a href="/contests">contests</a><br><a href="/ranks/">ranks</a><br><br><a href="/forum">forum</a><br><a href="/comments">comments</a><br><a href="/tools">tools</a><br><a href="/credits">credits</a><br><hr></div><a href="/problems/classical/"></a><br>
+
+	<div class="time">
+Server time:</div>
+<div class="time">
+2011-10-19
+<br>
+<b>22 : 16 : 52</b>
+</div>
+
+</td><td style="width: 748px; padding:0px;" valign="top" class="content0">
+        <table width="100%" cellpadding="0" cellspacing="0">
+        <tr>
+                <td style="padding:0px;" colspan="2"><center>
+                                
+                </center></td>
+        </tr>
+        <tr>
+                <td class="content" width="99%" style="padding: 10px"><script type='text/javascript' src='/gfx/jquery.bgiframe.js'></script>
+<script type='text/javascript' src='/gfx/jquery.tooltip.js'></script>
+<script type='text/javascript' src='/gfx/jquery.cxhelp.js'></script>
+
+
+
+ <!-- wykorzystywane w pcontent.html (by wiele) -->
+
+<table class="problems" width="100%">
+<tr class="navigation">
+<td><a href="/submit/BUGLIFE/">Submit</a></td>
+<td><a href="/status/BUGLIFE,muntasir/">My submissions</a></td>
+<td><a href="/status/BUGLIFE/">All submissions</a></td>
+<td><a href="/ranks/BUGLIFE/">Best solutions</a></td>
+<td><a href="/problems/BUGLIFE.ps">PS</a></td>
+<td><a href="/problems/BUGLIFE.pdf">PDF</a></td>
+<td><a href="/problems/classical/">Back to list</a></td>
+</tr>
+</table>
+
+<div class="prob">
+
+<!-- google_ad_section_start -->
+<!-- plik z pomoca kontekstowa (cxhelp_*) dziedziczony po pindex.html -->
+
+<div style="position: absolute;">
+<div class="fb-like" data-href="http://www.spoj.pl/problems/BUGLIFE/" data-send="true" data-layout="box_count" data-width="70" data-show-faces="false"></div>
+</div>
+
+<script type="text/javascript" src="/gfx/jscripts/tiny_mce/plugins/asciimath/js/ASCIIMathMLwFallback.js"></script>
+<!--script type="text/javascript" src="/gfx/jscripts/tiny_mce/plugins/asciisvg/js/ASCIIsvgPI.js"></script-->
+<script type="text/javascript">
+<!--
+var AScgiloc = 'http://www.imathas.com/imathas/filter/graph/svgimg.php';
+var AMTcgiloc = "/files/gif/";
+-->
+</script>
+
+<table width="100%" style="margin-top:10px">
+<tr>
+	<td>
+		<h2>SPOJ Problem Set (classical)</h2>
+				<h1>3377. A Bug&#8217;s Life</h1>
+		<h2>Problem code: BUGLIFE</h2>
+	</td>
+	</tr>
+</table>
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-4453360425583535";
+/* Spoj - baner gĂłrny */
+google_ad_slot = "5796055248";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+<p align="justify">
+<p>Professor Hopper is researching the sexual behavior of a rare species of bugs. He assumes that
+they feature two different genders and that they only interact with bugs of the opposite gender. In
+his experiment, individual bugs and their interactions were easy to identify, because numbers were
+printed on their backs.<br><br>
+Given a list of bug interactions, decide whether the experiment supports his assumption of two
+genders with no homosexual bugs or if it contains some bug interactions that falsify it.
+
+
+<h3>Input</h3>
+<p>The first line of the input contains the number of scenarios. Each scenario starts with one line
+giving the number of bugs (at least one, and up to 2000) and the number of interactions (up to
+1000000) separated by a single space. In the following lines, each interaction is given in the form of
+two distinct bug numbers separated by a single space. Bugs are numbered consecutively starting
+from one.
+
+
+<h3>Output</h3>
+<p>The output for every scenario is a line containing &#8220;Scenario #i:&#8221;, where i is the number of the
+scenario starting at 1, followed by one line saying either &#8220;No suspicious bugs found!&#8221; if the
+experiment is consistent with his assumption about the bugs&#8217; sexual behavior, or &#8220;Suspicious
+bugs found!&#8221; if Professor Hopper&#8217;s assumption is definitely wrong.
+
+
+<h3>Example</h3>
+
+<pre>
+<b>Input:</b>
+2
+3 3
+1 2
+2 3
+1 3
+4 2
+1 2
+3 4
+
+
+<b>Output:</b>
+Scenario #1:
+Suspicious bugs found!
+Scenario #2:
+No suspicious bugs found!
+
+</pre>
+
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-4453360425583535";
+/* Spoj - wiersz */
+google_ad_slot = "3432347421";
+google_ad_width = 728;
+google_ad_height = 15;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+<hr>
+<table border=0 cellspacing=0 cellpadding=0 align=left style="margin-bottom:10px" class="probleminfo">
+<tr><td>Added by:</td><td><a href="/users/dilaang">Daniel Gómez Didier</a></td></tr>
+<tr><td>Date:</td><td>2008-11-17</td></tr>
+<tr><td>Time limit:</td><td>1s-2s</td></tr>
+<tr><td>Source limit:</td><td>50000B</td></tr>
+<tr><td>Languages:</td><td>All except: ERL JS PERL 6 </td></tr>
+<tr><td>Resource:</td><td>2007 PUJ - Circuito de Maratones ACIS / REDIS</td></tr>	
+</table><!-- google_ad_section_end -->
+
+<div id="ccontent">
+<!-- google_ad_section_start -->
+
+<hr style="clear:both;"/>
+<a href="#" onclick="toggleComments(); return false;"><span id="comments_sh">hide</span> comments</a><br/>
+
+<a id="comments"></a>
+<table id="comments_table" width="100%">
+		<tr>
+		<td colspan="2">
+		<table class="navigation" width="99%">
+<tr><td align="left" width="27%">
+<i>Previous</i></td><td class="navigationcenter" width="25%">&nbsp;1</td> 
+<td class="navigationcenter" width="25%"><a href="/problems/BUGLIFE/cstart=10" class="pager_link">&nbsp;2</a></td> 
+<td align="right" width="25%">
+<a href="/problems/BUGLIFE/cstart=10" class="pager_link">Next</a> <a href="/problems/BUGLIFE/cstart=10" class="pager_link">&gt;</a></td></table>		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+		<script type="text/javascript"><!--
+google_ad_client = "ca-pub-4453360425583535";
+/* Spoj - wiersz */
+google_ad_slot = "3432347421";
+google_ad_width = 728;
+google_ad_height = 15;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+		</td>
+	</tr>
+	
+	<script language="JavaScript">
+	<!--
+	$(document).ready(function(){
+        $('.pager_link').bind('click', function(me){
+                var href=$(me.currentTarget).attr('href');
+		$('#ccontent').animate({opacity: 0.5},1);
+                $.ajax({
+                        type: "GET",
+                        url: href+",ajax=1",
+                        contentType: "application/x-www-form-urlencoded;charset=ISO-8859-2",
+                        success: function(data){
+                                $('#ccontent').html(data);
+				$('#ccontent').animate({opacity: 1.0},1);
+                        },
+                        error: function(err){
+                                alert('error');
+                        }
+                });
+                return false;
+        });
+	});
+	-->
+	</script>
+	
+
+			
+	<tr>
+		<td colspan="2" class="comm comm_odd ">
+		<font >
+		2011-06-23 14:19:15 <b><a href="/users/grandmaster">Grandmaster</a></b> 
+		</font>
+					(<a href="/comment/BUGLIFE/sh/20274/"><font color="red"><b>hide</b></font></a>)
+							(<a href="/comment/BUGLIFE/edit/20274/"><b>edit</b></a>) 
+							(<a href="/comment/BUGLIFE/del/20274/" onclick="javascript:return confirm('Are you sure you want to delete this comment ?')"><font color="red"><b>delete</b></font></a>)
+				<br/>
+				@gaurav: well if you assume 1 is "M" then<br/> 2 and 3 are 'F' then 4 will be 'M' .. so no conflict .. same procedure goes if you say 1 is 'F' ..
+						</td>
+	</tr>
+				
+	<tr>
+		<td colspan="2" class="comm comm_even ">
+		<font >
+		2011-06-23 12:19:26 <b><a href="/users/syl1">gaurav</a></b> 
+		</font>
+					(<a href="/comment/BUGLIFE/sh/20271/"><font color="red"><b>hide</b></font></a>)
+							(<a href="/comment/BUGLIFE/edit/20271/"><b>edit</b></a>) 
+							(<a href="/comment/BUGLIFE/del/20271/" onclick="javascript:return confirm('Are you sure you want to delete this comment ?')"><font color="red"><b>delete</b></font></a>)
+				<br/>
+				i will but check the case<br/>4 3<br/>1 2<br/>3 4<br/>1 3<br/>now the ans will depend on whether yu have taken 3 is in same gender group as 1 or not....what to do in that case....?? 
+						</td>
+	</tr>
+				
+	<tr>
+		<td colspan="2" class="comm comm_odd ">
+		<font >
+		2011-06-22 18:20:02 <b><a href="/users/grandmaster">Grandmaster</a></b> 
+		</font>
+					(<a href="/comment/BUGLIFE/sh/20237/"><font color="red"><b>hide</b></font></a>)
+							(<a href="/comment/BUGLIFE/edit/20237/"><b>edit</b></a>) 
+							(<a href="/comment/BUGLIFE/del/20237/" onclick="javascript:return confirm('Are you sure you want to delete this comment ?')"><font color="red"><b>delete</b></font></a>)
+				<br/>
+				@gaurav : recheck your algorithm .. and for more query check the forum ..
+						</td>
+	</tr>
+				
+	<tr>
+		<td colspan="2" class="comm comm_even ">
+		<font >
+		2011-06-22 10:08:06 <b><a href="/users/syl1">gaurav</a></b> 
+		</font>
+					(<a href="/comment/BUGLIFE/sh/20211/"><font color="red"><b>hide</b></font></a>)
+							(<a href="/comment/BUGLIFE/edit/20211/"><b>edit</b></a>) 
+							(<a href="/comment/BUGLIFE/del/20211/" onclick="javascript:return confirm('Are you sure you want to delete this comment ?')"><font color="red"><b>delete</b></font></a>)
+				<br/>
+				@aditya i got it.....employing same technique but it is giving wrong ans now....<br/>any more somewhat trickier test cases...??
+						</td>
+	</tr>
+				
+	<tr>
+		<td colspan="2" class="comm comm_odd ">
+		<font >
+		2011-06-22 06:23:10 <b><a href="/users/grandmaster">Grandmaster</a></b> 
+		</font>
+					(<a href="/comment/BUGLIFE/sh/20198/"><font color="red"><b>hide</b></font></a>)
+							(<a href="/comment/BUGLIFE/edit/20198/"><b>edit</b></a>) 
+							(<a href="/comment/BUGLIFE/del/20198/" onclick="javascript:return confirm('Are you sure you want to delete this comment ?')"><font color="red"><b>delete</b></font></a>)
+				<br/>
+				@gaurav : read the test case .assume one is M so the other one has to be F , but if in the end the assumption goes wrong .. "Suspicious!!"
+						</td>
+	</tr>
+				
+	<tr>
+		<td colspan="2" class="comm comm_even ">
+		<font >
+		2011-06-21 16:29:59 <b><a href="/users/syl1">gaurav</a></b> 
+		</font>
+					(<a href="/comment/BUGLIFE/sh/20161/"><font color="red"><b>hide</b></font></a>)
+							(<a href="/comment/BUGLIFE/edit/20161/"><b>edit</b></a>) 
+							(<a href="/comment/BUGLIFE/del/20161/" onclick="javascript:return confirm('Are you sure you want to delete this comment ?')"><font color="red"><b>delete</b></font></a>)
+				<br/>
+				how do we decide whether they are of same gender or opposite..??
+						</td>
+	</tr>
+				
+	<tr>
+		<td colspan="2" class="comm comm_odd ">
+		<font >
+		2011-06-21 15:26:11 <b><a href="/users/grandmaster">Grandmaster</a></b> 
+		</font>
+					(<a href="/comment/BUGLIFE/sh/20159/"><font color="red"><b>hide</b></font></a>)
+							(<a href="/comment/BUGLIFE/edit/20159/"><b>edit</b></a>) 
+							(<a href="/comment/BUGLIFE/del/20159/" onclick="javascript:return confirm('Are you sure you want to delete this comment ?')"><font color="red"><b>delete</b></font></a>)
+				<br/>
+				:( always getting tle .... !!! <br/>help !!!<br/><br/>WTF now a wrong answer !!!! X-(
+				<br/><br/>
+		<b>Last edit: 2011-06-21 15:52:55</b>
+						</td>
+	</tr>
+				
+	<tr>
+		<td colspan="2" class="comm comm_even ">
+		<font >
+		2011-06-16 14:21:57 <b><a href="/users/keybo13">karthikeyan</a></b> 
+		</font>
+					(<a href="/comment/BUGLIFE/sh/19938/"><font color="red"><b>hide</b></font></a>)
+							(<a href="/comment/BUGLIFE/edit/19938/"><b>edit</b></a>) 
+							(<a href="/comment/BUGLIFE/del/19938/" onclick="javascript:return confirm('Are you sure you want to delete this comment ?')"><font color="red"><b>delete</b></font></a>)
+				<br/>
+				no fast io is needed for this problem
+						</td>
+	</tr>
+				
+	<tr>
+		<td colspan="2" class="comm comm_odd ">
+		<font >
+		2011-05-28 09:55:07 <b><a href="/users/kbee">(T_T)</a></b> 
+		</font>
+					(<a href="/comment/BUGLIFE/sh/19164/"><font color="red"><b>hide</b></font></a>)
+							(<a href="/comment/BUGLIFE/edit/19164/"><b>edit</b></a>) 
+							(<a href="/comment/BUGLIFE/del/19164/" onclick="javascript:return confirm('Are you sure you want to delete this comment ?')"><font color="red"><b>delete</b></font></a>)
+				<br/>
+				Hey whats the joke here?<br/><br/>EDIT:First of all Mohamed Ramzy is bullshitting for reasons unknown, and secondly i required fast i/o to ac dont know about others.
+				<br/><br/>
+		<b>Last edit: 2011-05-28 11:08:26</b>
+						</td>
+	</tr>
+				
+	<tr>
+		<td colspan="2" class="comm comm_even ">
+		<font >
+		2011-02-25 18:35:39 <b><a href="/users/steathler">Hercules</a></b> 
+		</font>
+					(<a href="/comment/BUGLIFE/sh/16165/"><font color="red"><b>hide</b></font></a>)
+							(<a href="/comment/BUGLIFE/edit/16165/"><b>edit</b></a>) 
+							(<a href="/comment/BUGLIFE/del/16165/" onclick="javascript:return confirm('Are you sure you want to delete this comment ?')"><font color="red"><b>delete</b></font></a>)
+				<br/>
+				some tricky test cases?? I am getting WA, but code seems correct.
+						</td>
+	</tr>
+			
+</table>
+
+
+<script language="javascript" type="text/javascript">
+<!--
+function getCookieVal (offset) {
+        var endstr = document.cookie.indexOf (";", offset);
+        if (endstr == -1) { 
+                endstr = document.cookie.length; 
+        }
+        return unescape(document.cookie.substring(offset, endstr));
+}
+
+function GetCookie (name) {
+  var arg = name + "=";
+  var alen = arg.length;
+  var clen = document.cookie.length;
+  var i = 0;
+  while (i < clen) {
+    var j = i + alen;
+    if (document.cookie.substring(i, j) == arg) {
+      return getCookieVal (j);
+      }
+    i = document.cookie.indexOf(" ", i) + 1;
+    if (i == 0) break; 
+    }
+  return null;
+}
+
+function toggleComments() {
+        var a = document.getElementById('comments_table');
+        var d = a.style.display;
+        if( d == "" || d == "block" ){
+                d = "none";
+                document.getElementById('comments_sh').innerHTML = 'show';
+        } else {
+                d = "block";
+                document.getElementById('comments_sh').innerHTML = 'hide';
+        }
+        a.style.display = d;
+        document.cookie="comments_table="+d+"; path=/;";
+}
+
+if( GetCookie('comments_table') == 'none' ){
+        document.getElementById('comments_sh').innerHTML = 'show';
+        document.getElementById('comments_table').style.display = 'hide';
+}
+
+-->
+</script>
+
+
+<!-- google_ad_section_end -->
+</div>
+<table width="100%">
+                <tr>
+                <td colspan="2" height="20px"></td>
+        </tr>
+        <form method="post" action="/comment/BUGLIFE/add/">
+        <tr> <td style="padding-left:5px;" colspan="2">Leave a Comment</td> </tr>
+        <tr>
+                <td valign="top"></td>
+                <td><textarea name="content" cols="40" rows="3"></textarea></td>
+        </tr>
+                <tr>
+                <td colspan="2" style="padding-left: 5px;">
+                        <input type="submit" value="Publish"/>
+                        <input type="hidden" name="pcode" value="BUGLIFE"/>
+                </td>
+        </tr>
+<tr>
+<td colspan="2" class="smallgrey" style="padding-left:5px;">
+Notes:
+<br>1. Don't post any source code here.
+<br>2. Please be careful, leave short comments only. Don't spam here.
+<br>3. For more discussion (hints, ideas, solutions) please visit our <a href="/forum">forum</a>.
+<br>4. Authors of the problems are allowed to delete the post and use html code here (e.g. to provide some useful links).
+</td>
+</tr>
+        </form>
+        </table>
+
+</div>
+        </td>
+<tr>
+        <td style="padding:0px" colspan="2"><center>
+                
+</center></td>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr>
+<td colspan="2" class="footer">
+<div class="a-footer"></div>
+<script language="javascript" type="text/javascript">
+<!--
+function swapSheet(sheet, caller) {
+    document.getElementById('theme').href=sheet;
+    document.cookie="css_0="+sheet+"; path=/;";
+    caller.href="#bottom";
+}
+
+function setWidth(w, caller) {
+    document.getElementById('maintable').style.width=w;
+    document.cookie="res="+w+"; path=/;";
+    caller.href="#bottom";
+}
+
+
+
+//-->
+
+</script>
+        <table width="100%">
+    <tr>
+	<td align="left" width=10% class="cfooter">
+	<a href="/info/">About SPOJ</a>
+	</td>
+	<td align="center" class="cfooter">
+	    width:
+	    <a href="/?rsl=855px"  onClick="setWidth('855px', this)">900</a>
+	    <a href="/?rsl=980px"  onClick="setWidth('980px', this)">1024</a>
+	    <a href="/?rsl=100%" onClick="setWidth('100%', this)">Full</a>
+	    &nbsp;&nbsp;
+	    theme:
+	    <a href="/?css=/themes/skin1.css" onClick="swapSheet('/themes/skin1.css', this)">olive</a>
+	    <a href="/?css=/themes/skin2.css" onClick="swapSheet('/themes/skin2.css', this)">banana</a>
+	    <a href="/?css=/themes/skin3.css" onClick="swapSheet('/themes/skin3.css', this)">plum</a>
+	    	</td>
+		<td align="center" class="cfooter">
+		 <span title="The discussion channel of the Sphere Online Judge community.">
+		 <a href="irc://irc.freenode.net/spoj"><b>#spoj</b> at freenode</a>
+		 </span>
+	</td>
+		<td width=10% class="cfooter" style="text-align:right">
+		<a href="/rss/" ><img src="/gfx/rss10x10.gif" border=0>&nbsp;RSS</a>&nbsp;
+	</div>
+	</td>
+    </tr>
+    </table>
+    </tr></table>
+</center>
+<div class="a-header"></div>
+
+<div id="fb-root"></div>
+<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
+
+<div style="font-size:10px; margin-top:4px; color: rgb(85,80,95);"><center>
+<a href="http://www.spoj.pl" style="color:black">SPOJ</a>
+System &copy; 2011
+<a href="http://sphere-research.com" style="color:black">Sphere Research Labs | Projekty informatyczne i aplikacje na zamówienie</a>. 
+All Rights Reserved.</center></div>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-10507872-1']);
+      _gaq.push(['_trackPageview']);
+        (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		      })();
+		      </script>
+		      
+</body>
+</html>

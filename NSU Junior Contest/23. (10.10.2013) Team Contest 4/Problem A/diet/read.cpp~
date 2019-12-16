@@ -1,0 +1,33 @@
+#include <iostream>
+#include <sstream>
+#include <fstream>
+
+using namespace std ;
+
+ofstream fout("a.in") ; 
+
+int main() {
+
+	for( int i = 1 ; i <= 11 ; i ++ ) {
+		ostringstream oss ; 
+		oss << "diet" ; 
+		oss << i ;
+		oss << ".in" ; 
+		
+		string cur = oss.str() ; 
+		
+		ifstream fin( cur ) ; 
+		
+		int H , N , W ; 
+		
+		fin >> H >> N ;
+		fout << H << " " << N << endl ; 
+		
+		
+		for( int j = 0 ; j < N ; j ++ ) {
+			fin >> W ; 
+			fout << W << endl ; 
+		}
+	}	
+	return 0 ; 
+}
